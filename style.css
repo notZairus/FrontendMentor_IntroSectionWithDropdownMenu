@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --headerContentHeight: 40px;
+}
+
+html, * {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Epilogue", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  height: 100dvh;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  height: 80px;
+  background-color: white;
+  display:flex;
+  align-items: center;
+  padding: 0px 50px;
+  justify-content: space-between;
+}
+
+header .left {
+  display: flex;
+  gap: 80px;
+}
+
+header .left nav {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+header .left nav {
+  list-style: none;
+}
+
+header .right {
+  display: flex;
+  gap: 40px;
+}
+
+button.Login {
+  border: none;
+  background-color: transparent;
+}
+
+button.Register {
+  background-color: white;
+  border: 1px solid hsl(0, 0%, 8%);
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+section {
+  height: calc(100dvh - 80px);
+  display: flex;
+}
+
+section main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  font-size: 5rem;
+  margin: 40px 0px;
+}
+
+main p {
+  line-height: 1.5rem;
+  margin-bottom: 50px;
+  color:hsl(0, 0%, 41%);
+}
+
+main button {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  border: none;
+  padding: 20px 28px;
+  border-radius: 13px;
+  font-weight: 700;
+}
+
+main .content .sponsors {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+aside img {
+  max-height: 80%;
+}
