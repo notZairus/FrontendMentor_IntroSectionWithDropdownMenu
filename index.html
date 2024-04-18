@@ -9,16 +9,51 @@
 <body>
   <header>
     <div class="left">
-      <img src="./images/logo.svg" alt="Logo">
+      <img src="./images/logo.svg" alt="Logo" id="logo">
       <nav>
-        <li>Features
+        <li id="Features" class="navii">
+          <p id="feat">Features</p>
           <img src="./images/icon-arrow-down.svg" alt="Arrow">
+          <ul class="dropdown" style="display: none;">
+            <li>
+              <img src="./images/icon-todo.svg" alt="Todo-icon">
+              <p>Todo List</p>
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="Calendar">
+              <p>Calendar</p>
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="Reminders">
+              <p>Reminders</p>
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" alt="Planning">
+              <p>Planning</p>
+            </li>
+          </ul>
         </li>
-        <li>Company
+        <li id="Company" class="navii">
+          <p id="comp">Company</p>
           <img src="./images/icon-arrow-down.svg" alt="Arrow">
+          <ul class="dropdown dd2" style="display: none;">
+            <li>
+              <p>History</p>
+            </li>
+            <li>
+              <p>Our Team</p>
+            </li>
+            <li>
+              <p>Blog</p>
+            </li>
+          </ul>
         </li>
-        <li>Careers</li>
-        <li>About</li>
+        <li class="navii">
+          <p>Careers</p>
+        </li>
+        <li class="navii">
+          <p>About</p>
+        </li>
       </nav>
     </div>
     <div class="right">
@@ -49,5 +84,6 @@
       <img src="./images/image-hero-desktop.png">
     </aside>
   </section>
+  <script src="./script.js"></script>
 </body>
 </html>
