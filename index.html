@@ -13,7 +13,7 @@
       <nav>
         <li id="Features" class="navii">
           <p id="feat">Features</p>
-          <img src="./images/icon-arrow-down.svg" alt="Arrow">
+          <img src="./images/icon-arrow-down.svg" alt="Arrow" class="arrow">
           <ul class="dropdown" style="display: none;">
             <li>
               <img src="./images/icon-todo.svg" alt="Todo-icon">
@@ -35,7 +35,7 @@
         </li>
         <li id="Company" class="navii">
           <p id="comp">Company</p>
-          <img src="./images/icon-arrow-down.svg" alt="Arrow">
+          <img src="./images/icon-arrow-down.svg" alt="Arrow" class="arrow">
           <ul class="dropdown dd2" style="display: none;">
             <li>
               <p>History</p>
@@ -60,6 +60,9 @@
       <button class="Login">Login</button>
       <button class="Register">Register</button>
     </div>
+    <div class="menu" id="menu">
+      <img src="./images/icon-menu.svg" id="menuimg">
+    </div>
   </header>
   <section>
     <main>
@@ -80,10 +83,72 @@
         </div>
       </div>
     </main>
-    <aside>
+    <div class="aside">
       <img src="./images/image-hero-desktop.png">
-    </aside>
+    </div>
   </section>
+
+  <div class="dark-blur" id="dark-blur"></div>
+
+  <sidebar id="sdbr">
+    <div class="sidecontent">
+      <img src="./images/icon-close-menu.svg" class="close" id="menucloseimg">
+    <nav>
+      <li id="Features">
+        <p id="featside">Features</p>
+        <img src="./images/icon-arrow-down.svg" alt="Arrow" class="arrow">
+        <ul>
+          <li>
+            <img src="./images/icon-todo.svg" alt="Todo-icon">
+            <p>Todo List</p>
+          </li>
+          <li>
+            <img src="./images/icon-calendar.svg" alt="Calendar">
+            <p>Calendar</p>
+          </li>
+          <li>
+            <img src="./images/icon-reminders.svg" alt="Reminders">
+            <p>Reminders</p>
+          </li>
+          <li>
+            <img src="./images/icon-planning.svg" alt="Planning">
+            <p>Planning</p>
+          </li>
+        </ul>
+      </li>
+      <li id="Company" class="navii">
+        <p id="compside">Company</p>
+        <img src="./images/icon-arrow-down.svg" alt="Arrow" class="arrow">
+        <ul>
+          <li>
+            <p>History</p>
+          </li>
+          <li>
+            <p>Our Team</p>
+          </li>
+          <li>
+            <p>Blog</p>
+          </li>
+        </ul>
+      </li>
+      <li class="navii">
+        <p>Careers</p>
+      </li>
+      <li class="navii">
+        <p>About</p>
+      </li>
+      <div class="btns">
+        <button class="login">
+          Login
+        </button>
+        <button>
+          Register
+        </button>
+      </div>
+    </nav>
+    </div>
+  </sidebar>
+
   <script src="./script.js"></script>
 </body>
 </html>

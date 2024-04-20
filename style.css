@@ -12,14 +12,13 @@ html, * {
 
 body {
   background-color: hsl(0, 0%, 98%);
-  height: 100dvh;
   padding: 0px;
   margin: 0px;
+  position: relative;
 }
 
 header {
   height: 80px;
-  background-color: white;
   display:flex;
   align-items: center;
   padding: 0px 50px;
@@ -61,6 +60,10 @@ header .right {
   gap: 40px;
 }
 
+header .menu {
+  display: none;
+}
+
 button.Login {
   border: none;
   background-color: transparent;
@@ -74,7 +77,6 @@ button.Register {
 }
 
 section {
-  height: calc(100dvh - 80px);
   display: flex;
 }
 
@@ -104,6 +106,14 @@ main button {
   padding: 20px 28px;
   border-radius: 13px;
   font-weight: 700;
+  border: 1px solid hsl(0, 0%, 8%);
+
+  transition: all 0.3s;
+}
+
+main button:active {
+  background-color: #fff;
+  color: hsl(0, 0%, 8%);
 }
 
 main .content .sponsors {
@@ -112,15 +122,14 @@ main .content .sponsors {
   justify-content: space-between;
 }
 
-aside {
-  width: auto;
-  height: 100%;
+.aside {
+  width: 50%;
   display: flex;
   align-items: center;
 }
 
-aside img {
-  max-height: 80%;
+.aside img {
+  width: 70%;
 }
 
 .dropdown {
@@ -155,4 +164,176 @@ aside img {
 header .left nav li:hover {
   color: black;
   font-weight: 400;
+}
+
+sidebar {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: white;
+
+  transition: width 0.5s;
+}
+
+sidebar .sidecontent {
+  display: none;
+}
+
+sidebar .close{
+  width: 35px;
+  right: -210px;
+  top: 20px;
+  position: relative;
+}
+
+sidebar nav {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+sidebar nav ul {
+  margin: 30px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+
+sidebar nav p,
+sidebar nav ul p {
+  font-size: 1.2rem;
+}
+
+sidebar nav ul,
+sidebar nav{
+  list-style: none;
+}
+
+sidebar nav p {
+  display: inline;
+}
+
+sidebar nav button {
+  padding: 15px 0px;
+  width: 215px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+sidebar nav button.login {
+  border: none;
+}
+
+.dark-blur {
+  background-color: rgba(0, 0, 0, 0.70);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  display: none;
+  transition: all 0.5s;
+}
+
+/**MEDIA QUERIES**/
+/**MEDIA QUERIES**/
+/**MEDIA QUERIES**/
+
+@media screen and (max-width: 1025px) {
+
+  header .left nav {
+    gap: 30px;
+  }
+
+  section {
+    padding: 0px 30px;
+    gap: 30px
+  }
+
+  section main .content .sponsors {
+    justify-content: space-between;
+  }
+
+  section main h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+    header .left nav,
+    header .right {
+      display: none;
+    }
+
+    section main h1 {
+      font-size: 3rem;
+    }
+
+    section main p {
+      font-size: calc(1rem - 3px);
+    }
+
+    section .aside img {
+      width: 100%;
+    }
+
+    header .menu {
+      display: block;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+  header {
+    padding: 20px;
+  }
+
+  section {
+    flex-direction: column-reverse;
+    padding: 30px 0px;
+  }
+
+  section main {
+    width: 100%;
+  }
+
+  section main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  section main .content h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  section main .content p {
+    text-align: center;
+    font-size:1rem;
+  }
+
+  section main .content .sponsors {
+    justify-content: space-around;
+  }
+
+  .aside {
+    width: 100%;
+  }
+
+  .aside img {
+    width: 100%;
+  }
+
+  header .right {
+    display: none;
+  }
 }
