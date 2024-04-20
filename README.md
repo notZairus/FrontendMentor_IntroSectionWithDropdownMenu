@@ -24,6 +24,7 @@ Users should be able to:
 
 ![Desktop View](./127.0.0.1_5500_.png)
 ![Mobile View](./127.0.0.1_5500_%20(1).png)
+![Mobile View Sidebar Expanded](./notzairus.github.io_FrontendMentor_IntroSectionWithDropdownMenu_.png)
 
 ### Links
 
